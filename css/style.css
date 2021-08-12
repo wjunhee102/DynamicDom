@@ -47,6 +47,7 @@ body {
     position: relative;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
     0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .todoapp input::-webkit-input-placeholder {
@@ -59,10 +60,10 @@ body {
     position: absolute;
     top: -125px;
     width: 100%;
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
     color: dimgray;
-    font-weight: 100;
+    font-weight: 600;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
