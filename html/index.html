@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul, li, div {
+    all: unset;
+    display: block;
+  }
+
+  .calculator {
+    width: 200px;
+    height: auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }
+
+  li, .result {
+    height: 50px;
+    line-height: 50px;
+  }
+
+  li {
+    width: 50px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .result, .right-pad li {
+    color: white;
+  }
+
+  .result {
+    background-color: black;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .pad {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+  }
+
+  .left-pad {
+    background-color: lightgray;
+    flex: none;
+  }
+
+  .left-pad ul {
+    display: flex;
+  }
+
+  .number-pad ul:last-child li:first-child {
+    text-align: left;
+    flex: auto;
+  }
+
+  ul li {
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+
+  .number-pad ul:last-child li {
+    border-bottom: 0px;
+  }
+
+  .right-pad {
+    flex: none;
+    background-color: orange;
+  }
+
+  .right-pad ul li {
+    border-right: 0px;
+  }
+
+  .right-pad ul li:last-child {
+    border-bottom: 0px;
+  }
+
+</style>
+<body>
+  <div class="main">
+    <div class="calculator">
+      <div class="result">11</div>
+      <div class="pad">
+
+        <div class="left-pad">
+          <ul class="util-pad">
+            <li>C</li>
+            <li>+/-</li>
+            <li>%</li>
+          </ul>
+          
+          <div class="number-pad">
+            <ul>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+            </ul>
+
+            <ul>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+            </ul>
+
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+
+            <ul>
+              <li>0</li>
+              <li>.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="right-pad">
+          <ul>
+            <li>/</li>
+            <li>X</li>
+            <li>-</li>
+            <li>+</li>
+            <li>=</li>
+          </ul>
+        </li>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

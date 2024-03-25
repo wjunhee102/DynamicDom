@@ -19,7 +19,7 @@ function createStore( reducer ) {
     listeners.push({
       subscriber
     });
-  };
+  }
 
   const getState = () => ({ ...state});
 

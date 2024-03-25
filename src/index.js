@@ -78,8 +78,8 @@ function renderTodoApp() {
   $todoCount.innerHTML = todoStateList? todoStateList.length : 0;
   app.render(
     $todoContainer, 
-    todoStateList.map((todo, key) => 
-      TodoApp(todo, key)
+    todoStateList.map((todo) => 
+      TodoApp(todo, todo.id)
     )
   );
 }

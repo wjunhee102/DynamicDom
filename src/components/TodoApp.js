@@ -103,8 +103,8 @@ function TodoApp(todo, key) {
   return DynamicDom.createElement("li", {
     id: todo.id,
     className: getState(key).data === "editing"? "editing" : todo.state
-  },  TodoView({todo, key}), 
-  TodoInput({todo, key}))
+  },  TodoView({todo, key: todo.id}), 
+  TodoInput({todo, key: todo.id}))
 }  
 
 export default TodoApp;
